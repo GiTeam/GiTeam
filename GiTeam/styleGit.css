@@ -2,6 +2,7 @@ body
 {
 
 	font-size: 15px;
+	background-color: #000;
 }
 
 
@@ -30,24 +31,25 @@ hr
 	padding: 1px;
 }
 
+
+
 /*----------------------SITE Blocks----------------------*/
-section#main
-{
-	width: 100%;
-}
 
 header#staticHeader
 {
 	display: block;
-	width: 100%; 
+	width: 100%;
 	position: fixed;
 	right: 0;
 	top: 0;
-	height: 22%;
 
+	min-height: 50px;
+	
+	
 	z-index: 100;
-	background-color: rgba(255,255,255,0.2);
-	box-shadow: 0 0 10px rgba(255,255,255,1);
+	background-color: rgba(255,255,255,0.25);
+	box-shadow: 0 0 10px rgba(255,255,255,1); 
+	overflow: auto;
 }
 
 nav#rightBlock
@@ -74,20 +76,21 @@ nav#rightBlock
 	
 	box-shadow: 0 0 10px rgba(255,255,255,1);
 	
-	background: url("bgimg/bgNav.png") no-repeat rgba(250,250,250,0.2);
+	background: url("bgimg/bgNav.png") no-repeat rgba(250,250,250,0.25);
 }
 
-section section#contentBlock
+section#contentBlock
 {
-	margin-left: 8%;
-	margin-top: 10%;
 	display: block;
-	position: fixed;
-	width: 80%;
-	height: 80%;
+	width: 75%;
+	margin-left: 8%;
+	margin-top: 205px;
+	clear: both;
+	padding: 0;
+	overflow: auto;
 	
-	background-color: rgba(250,10,50,0.6);
-	color:#FFF;
+
+	color: #FFF;
 }
 
 footer#footerBlock
@@ -101,6 +104,9 @@ footer#footerBlock
 	color: #ddd;
 }
 /*--------------------END SITE Blocks--------------------*/
+
+
+
 /*------------------------HEADER-------------------------*/
 header figure.logotype
 {
@@ -108,10 +114,10 @@ header figure.logotype
 	display: block;
 	width: 13%;
 	float: left;
-	margin-left: 10%;
+	margin-left: 45%;
 	margin-right: 0px;
 	margin-top: 1.5%;
-	height: 18%;
+	height: 20%;
 	border: none;
     outline: none;
 	clear: left;
@@ -130,6 +136,7 @@ header div.loork
 	background-color: #fff;
 }
 
+/*-------------------------FORM-------------------------*/
 header div.formContainer
 {
 	display: block;
@@ -138,7 +145,7 @@ header div.formContainer
 	width: 200px;
 	margin-right: 10%;
 	margin-top: 0.5%;
-	background-color: #f0f;
+	/*background-color: #f0f;*/
 }
 
 .captureForm
@@ -193,7 +200,12 @@ header div.formContainer
 	color: #555;
 	font-size: 1.1em;
 }
+/*------------------------END FORM-----------------------*/
+
 /*----------------------END HEADER-----------------------*/
+
+
+
 /*----------------------NAVIGATION----------------------*/
 .navigation
 {
@@ -240,26 +252,15 @@ header div.formContainer
 .blockArticle
 {
 	float: left;
-	min-width: 290px;
-	clear: left;
-	margin-top: 0,5%;
 	width:80%;
-	
+	clear: left;
 }
 
 
 .blockArticle .text
 {
-	text-align: justify;
 	clear: both;
 }
-
-.blockArticle .text
-{
-	text-align: justify;
-	clear: both;
-}
-
 
 
 .blockArticle .blockH2
